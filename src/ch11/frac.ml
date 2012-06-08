@@ -5,7 +5,9 @@
     という形 *)
 
 (* 目的：自然数 n の階乗を求める *)
-let rec frac n = 0
+let rec frac n = 
+    if n = 0 then 1 
+             else n * frac (n - 1) (* frac (n - 1) *)
 
 (* テスト *)
 let test1 = frac 0 = 1
