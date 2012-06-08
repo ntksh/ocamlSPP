@@ -7,7 +7,8 @@
 (* contain_zero : int list -> bool *)
 let contain_zero lst = match lst with
     [] -> false
-  | first :: rest -> false
+  | first :: rest -> if first = 0 then false
+                                  else false
 
 (* テスト *)
 let test1 = contain_zero [] = false
