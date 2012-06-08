@@ -1,7 +1,7 @@
 (* 目的：受け取った lst の中の最小値を返す *)
 (* minimum : int list -> int *)
 let rec minimum lst = match lst with 
-    [] -> 0
+    [] -> max_int 
   | first :: rest -> 0
 
 (* テスト *)
