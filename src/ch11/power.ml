@@ -1,8 +1,8 @@
 (* 目的：自然数 m と n を受け取り、m の n 乗を求める *)
 (* power : int -> int -> int *)
 let rec power m n = 
-    if n = 0 then 0
-             else 0
+    if n = 0 then 1
+             else m *  power m (n - 1) 
 
 
 
