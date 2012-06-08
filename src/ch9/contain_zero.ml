@@ -5,7 +5,9 @@
 
 (* 目的：受け取ったリスト lst に 0 が含まれているかを調べる *)
 (* contain_zero : int list -> bool *)
-let contain_zero lst = false
+let contain_zero lst = match lst with
+    [] -> false
+  | first :: rest -> false
 
 (* テスト *)
 let test1 = contain_zero [] = false
