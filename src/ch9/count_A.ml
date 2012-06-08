@@ -26,4 +26,8 @@ let lst4 = [{namae = "yoshida"; tensuu = 80; seiseki = "A"};
 let count_A lst = 0
 
 
-
+(* テスト *)
+let test1 = count_A lst1 = 0
+let test2 = count_A lst2 = 0
+let test3 = count_A lst3 = 1
+let test4 = count_A lst4 = 2
