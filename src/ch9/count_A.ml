@@ -20,3 +20,10 @@ let lst3 = [{namae = "asai"; tensuu = 70; seiseki = "B"};
 let lst4 = [{namae = "yoshida"; tensuu = 80; seiseki = "A"};
             {namae = "asai"; tensuu = 70; seiseki = "B"};
             {namae = "kaneko"; tensuu = 85; seiseki = "A"}]
+
+(* 目的：学生データのリスト lst のうち、成績が A の人の数を返す *)
+(* count_A : gakusei_t list -> int *)
+let count_A lst = 0
+
+
+
