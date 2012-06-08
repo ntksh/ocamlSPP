@@ -5,7 +5,10 @@
 
 (* 目的：整数のリスト lst を受け取り、その中の偶数の要素のみを含むリストを返す
  * *)
-let even lst = []
+let rec even lst = match lst with 
+      [] -> []
+    | first :: rest -> if first mod 2 = 0 then first :: even rest
+                                          else even rest
 
 
 (* テスト *)
