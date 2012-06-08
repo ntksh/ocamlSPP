@@ -7,7 +7,7 @@
 (* add_to_each : int -> int list list -> int list list *)
 let rec add_to_each n lst = match lst with
           [] -> []
-        | first :: rest -> [] (* add_to_each n rest*)
+        | first :: rest -> (n :: first) :: add_to_each n rest
 
 (* テスト *)
 let test1 = add_to_each 1 [] = []
