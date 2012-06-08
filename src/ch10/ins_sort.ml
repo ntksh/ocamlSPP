@@ -1,3 +1,6 @@
+(* あらかじめ関数 insert が使えるようにしておく必要がある。 *)
+#use "insert.ml"
+
 (* 目的：整数のリストを受け取り、昇順に整列したリストを返す *)
 (* ins_sort : int list -> int list *)
 let rec ins_sort lst = match lst with 
