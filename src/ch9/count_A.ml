@@ -25,7 +25,7 @@ let lst4 = [{namae = "yoshida"; tensuu = 80; seiseki = "A"};
 (* count_A : gakusei_t list -> int *)
 let count_A lst = match lst with 
         [] -> 0
-     |  first :: rest -> 0 (* count_A rest *)
+     |  {namae = n; tensuu = t; seiseki = s} :: rest -> 0 (* count_A rest *)
 
 
 (* テスト *)
