@@ -23,7 +23,9 @@ let lst4 = [{namae = "yoshida"; tensuu = 80; seiseki = "A"};
 
 (* 目的：学生データのリスト lst のうち、成績が A の人の数を返す *)
 (* count_A : gakusei_t list -> int *)
-let count_A lst = 0
+let count_A lst = match lst with 
+        [] -> 0
+     |  first :: rest -> 0 (* count_A rest *)
 
 
 (* テスト *)
