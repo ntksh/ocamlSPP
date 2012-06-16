@@ -1,6 +1,7 @@
 (* 目的：n の約数のリストを返す *)
 (* divisor : int -> int list *)
-let divisor n = []
+let divisor n = 
+    filter (fun x -> n mod x = 0) (enumerate n)
 
 
 (* テスト *)
