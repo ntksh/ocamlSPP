@@ -30,14 +30,6 @@ let rec quick_sort lst =
                            @ [first]
                            @ quick_sort (take_greater first rest)
     
-    
-    
-    match lst with
-    [] -> [] (* 自明に答えが出るケース *)
-  | first :: rest -> quick_sort (take_less first rest)
-                     @ [first]
-                     @ quick_sort (take_greater first rest)
-
 
 (* テスト *)
 let test1 = quick_sort [] = []
