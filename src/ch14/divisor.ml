@@ -1,3 +1,5 @@
+#use "enumerate.ml"
+
 (* 目的：n の約数のリストを返す *)
 (* divisor : int -> int list *)
 let divisor n = 
