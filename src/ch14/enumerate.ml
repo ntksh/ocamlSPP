@@ -1,6 +1,8 @@
 (* 目的：n から 1 までのリストを作る *)
 (* enumerate : int -> int list *)
-let enumerate n = []
+let enumerate n = 
+    if n = 0 then []
+             else n :: enumerate (n - 1)
 
 
 (* テスト *)
