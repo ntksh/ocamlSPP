@@ -1,6 +1,10 @@
+#use "divisor.ml"
+
 (* 目的：m 以下の完全数のリストを返す *)
 (* perfect : int -> int list *)
-let perfect m = []
+let perfect m = 
+    List.filter (fun n -> fold_right (+) (divisor n) 0 - n = n)
+                (enumerate m)
 
 
 (* テスト *)
