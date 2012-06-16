@@ -1,9 +1,8 @@
 (* 目的：受け取った lst をクイックソートを使って照準に整列する *)
 (* quick_sort : int list -> int list *)
-let rec quick_sort lst = 
-    if lst = []
-    then []
-    else []
+let rec quick_sort lst = match lst with
+    [] -> [] (* 自明に答えが出るケース *)
+  | first :: rest -> [] (* それ以外のケース *)
 
 
 (* テスト *)
