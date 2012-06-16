@@ -1,11 +1,15 @@
 (* 補助関数 *)
+(* 目的：lst の中から n より p である要素のみを取り出す *)
+(* take : int -> int list -> (int -> int -> bool) -> int list *)
+let take n lst p = List.filter (fun item -> p item n) lst
+
 (* 目的：lst の中から n より小さい要素のみを取り出す *)
 (* take_less : int -> int list -> int list *)
-let take_less n lst = List.filter (fun item -> item < n) lst 
+let take_less n lst = take n lst (<) 
 
 (* 目的：lst の中から n より大きい要素のみを取り出す *)
 (* take_greater : int -> int list -> int list *)
-let take_greater n lst = List.filter (fun item -> item > n) lst
+let take_greater n lst = take n lst (>) 
 
 
 (* 目的：受け取った lst をクイックソートを使って照準に整列する *)
