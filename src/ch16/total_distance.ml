@@ -15,7 +15,4 @@ let rec hojo lst total0 = match lst with
 
 (* 目的：先頭からリスト中の各点までの距離の合計を計算する *)
 (* total_distance : distance_t list -> distance_t list *)
-let rec total_distance lst = match lst with
-        [] -> []
-      | {kyori = k; total = t} :: rest ->
-              [] (* total_distance rest *)
+let rec total_distance lst = hojo lst 0.0 
