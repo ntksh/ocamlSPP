@@ -2,8 +2,8 @@
 (* quick_sort : int list -> int list *)
 let rec quick_sort lst = 
     if lst = []
-    then (* 自明に答えが出るケース *)
-    else (* それ以外のケース *)
+    then []
+    else []
 
 
 (* テスト *)
