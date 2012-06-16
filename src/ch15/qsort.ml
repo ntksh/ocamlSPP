@@ -1,11 +1,19 @@
 (* 補助関数 *)
 (* 目的：lst の中から n より小さい要素のみを取り出す *)
 (* take_less : int -> int list -> int list *)
-let take_less n lst = [] (* 未完成 *)
+let take_less n lst = match lst with
+            [] -> []
+          | first :: rest -> if first < n
+                             then first :: take_less n rest
+                             else take_less n rest
 
 (* 目的：lst の中から n より大きい要素のみを取り出す *)
 (* take_greater : int -> int list -> int list *)
-let take_greater n lst = [] (* 未完成 *)
+let take_greater n lst = match lst with
+            [] -> []
+          | first :: rest -> if first > n
+                             then first :: take_greater n rest
+                             else take_greater n rest
 
 
 (* 目的：受け取った lst をクイックソートを使って照準に整列する *)
