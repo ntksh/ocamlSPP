@@ -12,9 +12,9 @@ let take_greater n lst = [] (* 未完成 *)
 (* quick_sort : int list -> int list *)
 let rec quick_sort lst = match lst with
     [] -> [] (* 自明に答えが出るケース *)
-  | first :: rest -> [] (* それ以外のケース *)
-                (* quick_sort (take_less first rest) *)
-                (* quick_sort (take_greater first rest) *)
+  | first :: rest -> quick_sort (take_less first rest)
+                     @ [first]
+                     @ quick_sort (take_greater first rest)
 
 
 (* テスト *)
